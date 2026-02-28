@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Gemma | 3-Star Hotel in Ischia, Italy</title>
+  <meta name="description" content="Hotel Gemma - A charming 3-star family-run Mediterranean villa in Casamicciola Terme, Ischia. Thermal pools, sea views, and authentic Italian hospitality.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-text">Hotel Gemma</span>
+        <span class="nav__logo-sub">Ischia</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#about" class="nav__link" data-i18n="nav_about">Chi Siamo</a></li>
+        <li><a href="#rooms" class="nav__link" data-i18n="nav_rooms">Camere</a></li>
+        <li><a href="#amenities" class="nav__link" data-i18n="nav_amenities">Servizi</a></li>
+        <li><a href="#dining" class="nav__link" data-i18n="nav_dining">Ristorante</a></li>
+        <li><a href="#gallery" class="nav__link" data-i18n="nav_gallery">Galleria</a></li>
+        <li><a href="#reviews" class="nav__link" data-i18n="nav_reviews">Recensioni</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav_book">Prenota</a></li>
+        <li class="nav__lang">
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-switcher__current" id="langToggle" aria-label="Change language">
+              <span class="lang-switcher__flag" id="currentFlag">🇮🇹</span>
+              <span class="lang-switcher__code" id="currentLang">IT</span>
+              <svg class="lang-switcher__arrow" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l3 3 3-3"/></svg>
+            </button>
+            <div class="lang-switcher__dropdown" id="langDropdown">
+              <button class="lang-switcher__option lang-switcher__option--active" data-lang="it">
+                <span class="lang-switcher__flag">🇮🇹</span> Italiano
+              </button>
+              <button class="lang-switcher__option" data-lang="en">
+                <span class="lang-switcher__flag">🇬🇧</span> English
+              </button>
+              <button class="lang-switcher__option" data-lang="fr">
+                <span class="lang-switcher__flag">🇫🇷</span> Fran&ccedil;ais
+              </button>
+              <button class="lang-switcher__option" data-lang="de">
+                <span class="lang-switcher__flag">🇩🇪</span> Deutsch
+              </button>
+              <button class="lang-switcher__option" data-lang="ru">
+                <span class="lang-switcher__flag">🇷🇺</span> Русский
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="https://www.gemmahotel.it/wp-content/uploads/2015/12/gemma2.jpg" alt="Hotel Gemma panoramic view of Ischia" class="hero__bg-img">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__stars">&#9733; &#9733; &#9733;</p>
+      <h1 class="hero__title">Hotel Gemma</h1>
+      <p class="hero__subtitle" data-i18n="hero_subtitle">Un Gioiello Mediterraneo sull'Isola d'Ischia</p>
+      <p class="hero__desc" data-i18n="hero_desc">Ospitalita familiare, acque termali e panorami mozzafiato sul Golfo di Napoli</p>
+      <div class="hero__actions">
+        <a href="#rooms" class="btn btn--primary" data-i18n="hero_btn_rooms">Scopri le Camere</a>
+        <a href="#contact" class="btn btn--outline" data-i18n="hero_btn_book">Prenota il Soggiorno</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__images">
+          <div class="about__img about__img--1">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/12/esterni-hotel-ischia-9.jpg" alt="Hotel Gemma Mediterranean villa exterior" loading="lazy">
+          </div>
+          <div class="about__img about__img--2">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/piscina-hotel-ischia.jpg" alt="Hotel Gemma thermal swimming pool" loading="lazy">
+          </div>
+        </div>
+        <div class="about__content">
+          <span class="section__label" data-i18n="about_label">Benvenuti al</span>
+          <h2 class="section__title">Hotel Gemma</h2>
+          <div class="about__divider"></div>
+          <p class="about__text" data-i18n="about_text1">
+            Situato nel cuore di Casamicciola Terme sull'incantevole isola d'Ischia, l'Hotel Gemma e una affascinante villa mediterranea a 3 stelle dove armonia e relax incontrano l'autentica ospitalita italiana.
+          </p>
+          <p class="about__text" data-i18n="about_text2">
+            Dal 2002, la nostra famiglia accoglie gli ospiti con calore e dedizione, offrendo un rifugio intimo con 29 camere arredate con cura, due piscine geotermali e viste panoramiche sul Golfo di Napoli fino alle isole di Procida e Vivara.
+          </p>
+          <p class="about__text" data-i18n="about_text3">
+            Che cerchiate l'abbraccio curativo delle famose acque termali di Ischia, il piacere della cucina italiana fatta in casa, o semplicemente una fuga tranquilla sotto il sole mediterraneo, l'Hotel Gemma e la vostra casa sull'isola.
+          </p>
+          <div class="about__stats">
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="29">0</span>
+              <span class="about__stat-label" data-i18n="stat_rooms">Camere</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="2">0</span>
+              <span class="about__stat-label" data-i18n="stat_pools">Piscine Termali</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num">8.9</span>
+              <span class="about__stat-label" data-i18n="stat_rating">Valutazione</span>
+            </div>
+            <div class="about__stat">
+              <span class="about__stat-num" data-target="3">0</span>
+              <span class="about__stat-label" data-i18n="stat_floors">Piani</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section class="section rooms" id="rooms">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label" data-i18n="rooms_label">Alloggi</span>
+        <h2 class="section__title" data-i18n="rooms_title">Le Nostre Camere</h2>
+        <p class="section__subtitle" data-i18n="rooms_subtitle">29 camere arredate con cura, ognuna progettata per il vostro comfort e relax</p>
+      </div>
+      <div class="rooms__grid">
+        <!-- Classic Room -->
+        <article class="room-card">
+          <div class="room-card__img">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/camera-classic-ischia1.jpg" alt="Classic Room at Hotel Gemma" loading="lazy">
+            <span class="room-card__badge" data-i18n="badge_popular">Popolare</span>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title" data-i18n="room_classic_title">Camera Classic</h3>
+            <p class="room-card__desc" data-i18n="room_classic_desc">Elegante e confortevole, le nostre Camere Classic presentano arredi moderni con tocco mediterraneo. Ogni camera include aria condizionata, TV, scrivania e bagno privato con prodotti di cortesia.</p>
+            <ul class="room-card__amenities">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_aircon">Aria Condizionata</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_wifi">Wi-Fi Gratuito</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_tv">TV a Schermo Piatto</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_breakfast">Colazione Inclusa</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--sm" data-i18n="btn_reserve">Prenota</a>
+          </div>
+        </article>
+
+        <!-- Sea View Room -->
+        <article class="room-card room-card--featured">
+          <div class="room-card__img">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/camera-classic-vista-mare-ischia.jpg" alt="Sea View Room at Hotel Gemma" loading="lazy">
+            <span class="room-card__badge room-card__badge--gold" data-i18n="badge_bestseller">Piu Venduta</span>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title" data-i18n="room_seaview_title">Camera Classic Vista Mare</h3>
+            <p class="room-card__desc" data-i18n="room_seaview_desc">Svegliatevi con panorami mozzafiato sul Golfo di Napoli. Queste camere premium dispongono di balcone privato con splendida vista mare, oltre a tutti i comfort della Camera Classic.</p>
+            <ul class="room-card__amenities">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_seaview">Balcone Vista Mare</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_panoramic">Viste Panoramiche</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_wifi">Wi-Fi Gratuito</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_breakfast">Colazione Inclusa</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--sm" data-i18n="btn_reserve">Prenota</a>
+          </div>
+        </article>
+
+        <!-- Wellness Room -->
+        <article class="room-card">
+          <div class="room-card__img">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/classic-benessere.jpg" alt="Classic Wellness Room at Hotel Gemma" loading="lazy">
+            <span class="room-card__badge room-card__badge--green" data-i18n="badge_wellness">Benessere</span>
+          </div>
+          <div class="room-card__content">
+            <h3 class="room-card__title" data-i18n="room_wellness_title">Camera Classic Benessere</h3>
+            <p class="room-card__desc" data-i18n="room_wellness_desc">L'esperienza Ischia definitiva. Godetevi tutti i comfort della Camera Classic con accesso giornaliero per due al rinomato Parco Termale Castiglione, dove acque curative e giardini rigogliosi vi attendono.</p>
+            <ul class="room-card__amenities">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_thermalpark">Accesso Parco Termale</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_fortwo">Per Due Ospiti</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_wifi">Wi-Fi Gratuito</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span data-i18n="amenity_breakfast">Colazione Inclusa</span>
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--sm" data-i18n="btn_reserve">Prenota</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section class="section amenities" id="amenities">
+    <div class="amenities__bg">
+      <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/piscina-hotel-ischia-2.jpg" alt="Hotel Gemma thermal pool area" loading="lazy">
+      <div class="amenities__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="section__header section__header--light">
+        <span class="section__label section__label--light" data-i18n="amenities_label">Esperienza</span>
+        <h2 class="section__title section__title--light" data-i18n="amenities_title">Servizi dell'Hotel</h2>
+        <p class="section__subtitle section__subtitle--light" data-i18n="amenities_subtitle">Tutto cio di cui avete bisogno per un'indimenticabile vacanza mediterranea</p>
+      </div>
+      <div class="amenities__grid">
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12z"/>
+              <path d="M8 14c0-2.21 1.79-4 4-4s4 1.79 4 4"/>
+              <circle cx="12" cy="8" r="1"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_pools_title">Piscine Termali</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_pools_desc">Due piscine all'aperto alimentate da sorgenti geotermali naturali, perfette per relax e benessere</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 8l4 4-4 4"/>
+              <path d="M3 12h18"/>
+              <path d="M12 3v18"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_solarium_title">Solarium Panoramico</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_solarium_desc">Terrazza panoramica con vista su Procida, Vivara e la terraferma</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_jacuzzi_title">Jacuzzi</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_jacuzzi_desc">Rilassatevi nella nostra jacuzzi con acque termali calde e viste spettacolari</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 010 8h-1"/>
+              <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+              <line x1="6" y1="1" x2="6" y2="4"/>
+              <line x1="10" y1="1" x2="10" y2="4"/>
+              <line x1="14" y1="1" x2="14" y2="4"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_restaurant_title">Ristorante & Bar</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_restaurant_desc">Cucina italiana tradizionale con pasta fatta in casa, pesce fresco e vini locali</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_wifi_title">Wi-Fi Gratuito</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_wifi_desc">Restate connessi in tutto l'hotel con Wi-Fi ad alta velocita gratuito</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_thermalpark_title">Accesso Parco Termale</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_thermalpark_desc">Ingresso giornaliero gratuito al Parco Termale Castiglione per soggiorni di 7+ notti</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="8.5" cy="7" r="4"/>
+              <line x1="20" y1="8" x2="20" y2="14"/>
+              <line x1="23" y1="11" x2="17" y2="11"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_family_title">Servizi per Famiglie</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_family_desc">Babysitting disponibile, pet-friendly e un'atmosfera accogliente per le famiglie</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <h3 class="amenity-card__title" data-i18n="amenity_tours_title">Escursioni & Tour</h3>
+          <p class="amenity-card__desc" data-i18n="amenity_tours_desc">Tour in barca, immersioni, noleggio bici ed escursioni guidate organizzate in loco</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dining Section -->
+  <section class="section dining" id="dining">
+    <div class="container">
+      <div class="dining__grid">
+        <div class="dining__content">
+          <span class="section__label" data-i18n="dining_label">Gastronomia</span>
+          <h2 class="section__title" data-i18n="dining_title">Cucina Italiana</h2>
+          <div class="about__divider"></div>
+          <p class="dining__text" data-i18n="dining_text1">
+            Vivete i veri sapori del Sud Italia nel nostro ristorante. La nostra cucina, gestita personalmente dai proprietari dell'hotel, serve piatti autentici preparati con gli ingredienti locali piu freschi in un'atmosfera familiare e calorosa.
+          </p>
+          <p class="dining__text" data-i18n="dining_text2">
+            Ogni sera, gustate pasta fatta in casa e pesce appena pescato dal Mar Tirreno. I nostri spaghetti alle vongole sono diventati leggendari tra gli ospiti che ritornano. Porzioni generose e qualita eccezionale a prezzi notevolmente giusti.
+          </p>
+          <div class="dining__features">
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_breakfast">Colazione Continentale</span>
+            </div>
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_seafood">Cena di Pesce Fresco</span>
+            </div>
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_pasta">Pasta Fatta in Casa</span>
+            </div>
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_wines">Vini Locali & Cocktail</span>
+            </div>
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_lunch">Pranzi al Sacco</span>
+            </div>
+            <div class="dining__feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+              <span data-i18n="dining_feat_roomservice">Servizio in Camera</span>
+            </div>
+          </div>
+        </div>
+        <div class="dining__images">
+          <div class="dining__img dining__img--1">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/ristorante-hotel-ischia.jpg" alt="Hotel Gemma restaurant dining room" loading="lazy">
+          </div>
+          <div class="dining__img dining__img--2">
+            <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/ristorante-hotel-ischia-2.jpg" alt="Hotel Gemma restaurant cuisine" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label" data-i18n="gallery_label">Viaggio Visivo</span>
+        <h2 class="section__title" data-i18n="gallery_title">Galleria</h2>
+        <p class="section__subtitle" data-i18n="gallery_subtitle">Scoprite la bellezza dell'Hotel Gemma e dell'isola d'Ischia</p>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/terrazzo-hotel-ischia.jpg" alt="Hotel Gemma panoramic terrace" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_terrace">Terrazza Panoramica</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/12/esterni-hotel-ischia.jpg" alt="Hotel Gemma exterior" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_exterior">Esterno Hotel</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/camera-hotel-ischia.jpg" alt="Hotel Gemma guest room" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_rooms">Camere Eleganti</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/solarium-hotel-ischia-7.jpg" alt="Hotel Gemma solarium" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_solarium">Solarium Panoramico</div>
+        </div>
+        <div class="gallery__item gallery__item--tall">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/12/esterni-hotel-ischia-6.jpg" alt="Hotel Gemma evening view" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_evening">Atmosfera Serale</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/bar-hotel-ischia.jpg" alt="Hotel Gemma bar" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_bar">Bar & Lounge</div>
+        </div>
+        <div class="gallery__item">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/spiaggia_degli_inglesi_ischia-263x162.jpg" alt="Ischia beach" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_beach">Spiagge Vicine</div>
+        </div>
+        <div class="gallery__item gallery__item--wide">
+          <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/ristorante-hotel-ischia-3.jpg" alt="Hotel Gemma restaurant" loading="lazy">
+          <div class="gallery__caption" data-i18n="gallery_cap_restaurant">Il Nostro Ristorante</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label" data-i18n="reviews_label">Dicono di Noi</span>
+        <h2 class="section__title" data-i18n="reviews_title">Cosa Dicono i Nostri Ospiti</h2>
+        <p class="section__subtitle" data-i18n="reviews_subtitle">Esperienze autentiche condivise dai viaggiatori di tutto il mondo</p>
+      </div>
+
+      <!-- Platform Scores -->
+      <div class="reviews__platforms">
+        <div class="reviews__platform">
+          <div class="reviews__platform-logo reviews__platform-logo--booking">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path d="M2.01 5.1v13.8c0 1.04.55 1.58 1.51 1.58h3.18c.66 0 1.17-.05 1.58-.16.41-.11.78-.29 1.08-.55.3-.26.56-.6.77-1.02.21-.42.41-.93.58-1.53H10.72c-.18.76-.41 1.32-.7 1.67-.29.35-.69.52-1.2.52H6.3c-.51 0-.86-.13-1.04-.39-.18-.26-.27-.74-.27-1.44V6.42c0-.7.09-1.18.27-1.44.18-.26.53-.39 1.04-.39h2.52c.51 0 .91.17 1.2.52.29.35.52.91.7 1.67h.01c-.17-.6-.37-1.11-.58-1.53-.21-.42-.47-.76-.77-1.02-.3-.26-.67-.44-1.08-.55-.41-.11-.92-.16-1.58-.16H3.52C2.56 3.52 2.01 4.06 2.01 5.1zm9.64 0v13.8c0 1.04.55 1.58 1.51 1.58h3.18c.66 0 1.17-.05 1.58-.16.41-.11.78-.29 1.08-.55.3-.26.56-.6.77-1.02.21-.42.41-.93.58-1.53h.01c-.18.76-.41 1.32-.7 1.67-.29.35-.69.52-1.2.52h-2.52c-.51 0-.86-.13-1.04-.39-.18-.26-.27-.74-.27-1.44V6.42c0-.7.09-1.18.27-1.44.18-.26.53-.39 1.04-.39h2.52c.51 0 .91.17 1.2.52.29.35.52.91.7 1.67h.01c-.17-.6-.37-1.11-.58-1.53-.21-.42-.47-.76-.77-1.02-.3-.26-.67-.44-1.08-.55-.41-.11-.92-.16-1.58-.16h-3.18c-.96 0-1.51.54-1.51 1.58z"/>
+            </svg>
+            <span class="reviews__platform-name">Booking.com</span>
+          </div>
+          <div class="reviews__platform-score">
+            <span class="reviews__score-num" data-target="8.8">0</span>
+            <span class="reviews__score-label" data-i18n="reviews_excellent">Eccellente</span>
+          </div>
+          <span class="reviews__review-count">571 <span data-i18n="reviews_reviews">recensioni</span></span>
+        </div>
+        <div class="reviews__platform">
+          <div class="reviews__platform-logo reviews__platform-logo--tripadvisor">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <circle cx="6.5" cy="13.5" r="2"/>
+              <circle cx="17.5" cy="13.5" r="2"/>
+              <path d="M12 6C8.13 6 4.6 7.64 2.18 10.28L1 9l.5 3.5H5l-1.18-1.32C5.82 8.8 8.72 7.5 12 7.5s6.18 1.3 8.18 3.68L19 12.5h3.5L23 9l-1.18 1.28C19.4 7.64 15.87 6 12 6z"/>
+              <circle cx="6.5" cy="13.5" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="17.5" cy="13.5" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span class="reviews__platform-name">TripAdvisor</span>
+          </div>
+          <div class="reviews__platform-score">
+            <span class="reviews__score-num" data-target="4.5">0</span>
+            <span class="reviews__score-out">/5</span>
+          </div>
+          <span class="reviews__review-count">229 <span data-i18n="reviews_reviews">recensioni</span></span>
+        </div>
+        <div class="reviews__platform">
+          <div class="reviews__platform-logo reviews__platform-logo--google">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            <span class="reviews__platform-name">Google</span>
+          </div>
+          <div class="reviews__platform-score">
+            <span class="reviews__score-num" data-target="4.3">0</span>
+            <span class="reviews__score-out">/5</span>
+          </div>
+          <span class="reviews__review-count">180+ <span data-i18n="reviews_reviews">recensioni</span></span>
+        </div>
+      </div>
+
+      <!-- Review Cards Carousel -->
+      <div class="reviews__carousel-wrapper">
+        <button class="reviews__arrow reviews__arrow--prev" aria-label="Previous review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="reviews__carousel" id="reviewsCarousel">
+          <div class="reviews__track" id="reviewsTrack">
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">M</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Marco S.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/de.png" alt="" class="review-card__flag" loading="lazy"> Deutschland
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--booking">
+                  <span class="review-card__score">9.2</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-card__text" data-i18n="review_1">"Lo staff era FANTASTICO, Marco e suo fratello, il papa e la mamma. La colazione era fresca e completa. L'hotel e gestito dalla famiglia con molto amore."</p>
+              <span class="review-card__source">Booking.com</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">S</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Sophie L.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/fr.png" alt="" class="review-card__flag" loading="lazy"> France
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--tripadvisor">
+                  <span class="review-card__score">5/5</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-card__text" data-i18n="review_2">"Un gioiello nascosto a Ischia! Piscine termali favolose, vista mozzafiato sul Golfo di Napoli dal solarium. Lo staff e come una famiglia che ti accoglie a casa."</p>
+              <span class="review-card__source">TripAdvisor</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">J</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">James R.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/gb.png" alt="" class="review-card__flag" loading="lazy"> United Kingdom
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--google">
+                  <span class="review-card__score">5/5</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-card__text" data-i18n="review_3">"Rapporto qualita-prezzo eccezionale. Camere spaziose con balconi e vista stupenda sul Vesuvio e il mare. Colazione abbondante e variegata ogni mattina."</p>
+              <span class="review-card__source">Google</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">A</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Anna K.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/ru.png" alt="" class="review-card__flag" loading="lazy"> Россия
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--booking">
+                  <span class="review-card__score">9.0</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              <p class="review-card__text" data-i18n="review_4">"Posizione ideale vicino alla fermata dell'autobus. Due piscine termali fantastiche, la jacuzzi e il solarium sono meravigliosi. Personale gentilissimo e disponibile."</p>
+              <span class="review-card__source">Booking.com</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">P</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Paolo B.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/it.png" alt="" class="review-card__flag" loading="lazy"> Italia
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--tripadvisor">
+                  <span class="review-card__score">5/5</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-card__text" data-i18n="review_5">"Hotel familiare con cucina straordinaria. Gli spaghetti alle vongole sono i migliori che abbia mai mangiato. Torniamo ogni anno e ci sentiamo sempre a casa."</p>
+              <span class="review-card__source">TripAdvisor</span>
+            </div>
+
+            <div class="review-card">
+              <div class="review-card__header">
+                <div class="review-card__avatar">E</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Elena M.</span>
+                  <span class="review-card__origin">
+                    <img src="https://flagcdn.com/w20/de.png" alt="" class="review-card__flag" loading="lazy"> Deutschland
+                  </span>
+                </div>
+                <div class="review-card__platform-badge review-card__platform-badge--google">
+                  <span class="review-card__score">4/5</span>
+                </div>
+              </div>
+              <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              <p class="review-card__text" data-i18n="review_6">"Accoglienza calorosa da parte della famiglia. Colazione con torte fatte in casa ogni giorno, vista incredibile dal terrazzo. Accesso gratuito al Parco Termale Castiglione."</p>
+              <span class="review-card__source">Google</span>
+            </div>
+
+          </div>
+        </div>
+        <button class="reviews__arrow reviews__arrow--next" aria-label="Next review">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <!-- Carousel Dots -->
+      <div class="reviews__dots" id="reviewsDots"></div>
+
+      <!-- CTA -->
+      <div class="reviews__cta">
+        <a href="https://www.booking.com/hotel/it/gemma.html" target="_blank" rel="noopener" class="reviews__cta-link" data-i18n="reviews_cta_booking">Leggi tutte le recensioni su Booking.com</a>
+        <span class="reviews__cta-divider">|</span>
+        <a href="https://www.tripadvisor.com/Hotel_Review-g580212-d575261-Reviews-Gemma_Hotel-Casamicciola_Terme_Isola_d_Ischia_Province_of_Naples_Campania.html" target="_blank" rel="noopener" class="reviews__cta-link" data-i18n="reviews_cta_tripadvisor">Leggi tutte le recensioni su TripAdvisor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="section location" id="location">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label" data-i18n="location_label">Esplora</span>
+        <h2 class="section__title" data-i18n="location_title">Posizione e Dintorni</h2>
+        <p class="section__subtitle" data-i18n="location_subtitle">Posizione perfetta per esplorare il meglio di Ischia</p>
+      </div>
+      <div class="location__grid">
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.0!2d13.9087!3d40.7433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0a2e40e4c9e7%3A0x7a94f4b4c8c6e0!2sHotel+Gemma!5e0!3m2!1sen!2sit!4v1"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Hotel Gemma location on map">
+          </iframe>
+        </div>
+        <div class="location__info">
+          <div class="location__address">
+            <h3>Hotel Gemma</h3>
+            <p>Via Castiglione 3<br>80074 Casamicciola Terme<br>Ischia (NA), Italy</p>
+          </div>
+          <div class="location__distances">
+            <h4 data-i18n="location_distances">Distanze</h4>
+            <div class="distance-item">
+              <span class="distance-item__name">Casamicciola Port</span>
+              <span class="distance-item__value">700m</span>
+            </div>
+            <div class="distance-item">
+              <span class="distance-item__name">Suor Angela Beach</span>
+              <span class="distance-item__value">750m</span>
+            </div>
+            <div class="distance-item">
+              <span class="distance-item__name">Ischia Porto</span>
+              <span class="distance-item__value">1 km</span>
+            </div>
+            <div class="distance-item">
+              <span class="distance-item__name">Lacco Ameno</span>
+              <span class="distance-item__value">4 km</span>
+            </div>
+            <div class="distance-item">
+              <span class="distance-item__name">La Mortella Garden</span>
+              <span class="distance-item__value">4 km</span>
+            </div>
+            <div class="distance-item">
+              <span class="distance-item__name">San Montano Beach</span>
+              <span class="distance-item__value">4.5 km</span>
+            </div>
+          </div>
+          <div class="location__transport">
+            <h4 data-i18n="location_getting_here">Come Arrivare</h4>
+            <p data-i18n="location_transport">Fermata dell'autobus proprio fuori dall'hotel. Porto di Ischia e porto di Casamicciola raggiungibili in 5 minuti di autobus. Servizio navetta aeroporto disponibile su richiesta.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Thermal Parks Banner -->
+  <section class="thermal-banner">
+    <div class="thermal-banner__bg">
+      <img src="https://www.gemmahotel.it/wp-content/uploads/2015/03/castiglione.jpg" alt="Castiglione Thermal Park Ischia" loading="lazy">
+      <div class="thermal-banner__overlay"></div>
+    </div>
+    <div class="container">
+      <div class="thermal-banner__content">
+        <h2 data-i18n="thermal_title">Scoprite il Patrimonio Termale di Ischia</h2>
+        <p data-i18n="thermal_text">L'Hotel Gemma offre ingresso giornaliero gratuito al rinomato Parco Termale Castiglione per soggiorni di 7 notti o piu. Due parchi termali raggiungibili a piedi: Parco Castiglione e Parco Idroterapico O'Vagnitiello.</p>
+        <a href="#contact" class="btn btn--primary" data-i18n="thermal_btn">Pianifica il Tuo Soggiorno Benessere</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label" data-i18n="contact_label">Contattaci</span>
+        <h2 class="section__title" data-i18n="contact_title">Contatti e Prenotazioni</h2>
+        <p class="section__subtitle" data-i18n="contact_subtitle">Saremo lieti di accogliervi all'Hotel Gemma</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_address">Indirizzo</h4>
+              <p>Via Castiglione 3, 80074<br>Casamicciola Terme, Ischia (NA), Italy</p>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_phone">Telefono</h4>
+              <p><a href="tel:+39081994045">+39 081 994045</a><br><a href="tel:+39081996728">+39 081 996728</a></p>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_email">Email</h4>
+              <p><a href="mailto:info@gemmahotel.it">info@gemmahotel.it</a></p>
+            </div>
+          </div>
+          <div class="contact__card">
+            <div class="contact__card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <div>
+              <h4 data-i18n="contact_hours">Orari</h4>
+              <p>Check-in: 12:00 - 23:00<br>Check-out: 07:00 - 10:00</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form" id="contactForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="firstName" class="form__label" data-i18n="form_firstname">Nome</label>
+              <input type="text" id="firstName" name="firstName" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="lastName" class="form__label" data-i18n="form_lastname">Cognome</label>
+              <input type="text" id="lastName" name="lastName" class="form__input" required>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label" data-i18n="form_email">Email</label>
+            <input type="email" id="email" name="email" class="form__input" required>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="checkIn" class="form__label" data-i18n="form_checkin">Data Check-in</label>
+              <input type="date" id="checkIn" name="checkIn" class="form__input" required>
+            </div>
+            <div class="form__group">
+              <label for="checkOut" class="form__label" data-i18n="form_checkout">Data Check-out</label>
+              <input type="date" id="checkOut" name="checkOut" class="form__input" required>
+            </div>
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="guests" class="form__label" data-i18n="form_guests">Ospiti</label>
+              <select id="guests" name="guests" class="form__input">
+                <option value="1" data-i18n="form_guest_1">1 Ospite</option>
+                <option value="2" selected data-i18n="form_guest_2">2 Ospiti</option>
+                <option value="3" data-i18n="form_guest_3">3 Ospiti</option>
+                <option value="4" data-i18n="form_guest_4">4 Ospiti</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="roomType" class="form__label" data-i18n="form_roomtype">Tipo Camera</label>
+              <select id="roomType" name="roomType" class="form__input">
+                <option value="classic" data-i18n="room_classic_title">Camera Classic</option>
+                <option value="seaview" data-i18n="room_seaview_title">Camera Classic Vista Mare</option>
+                <option value="wellness" data-i18n="room_wellness_title">Camera Classic Benessere</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label" data-i18n="form_message">Richieste Speciali</label>
+            <textarea id="message" name="message" class="form__input form__textarea" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form_submit">Invia Richiesta di Prenotazione</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3 class="footer__logo">Hotel Gemma</h3>
+          <p class="footer__tagline" data-i18n="footer_tagline">Un Gioiello Mediterraneo sull'Isola d'Ischia</p>
+          <p class="footer__address">Via Castiglione 3, 80074<br>Casamicciola Terme, Ischia (NA), Italy</p>
+        </div>
+        <div class="footer__links">
+          <h4 data-i18n="footer_quicklinks">Link Rapidi</h4>
+          <ul>
+            <li><a href="#about" data-i18n="nav_about">Chi Siamo</a></li>
+            <li><a href="#rooms" data-i18n="nav_rooms">Camere</a></li>
+            <li><a href="#amenities" data-i18n="nav_amenities">Servizi</a></li>
+            <li><a href="#dining" data-i18n="nav_dining">Ristorante</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">Galleria</a></li>
+            <li><a href="#reviews" data-i18n="nav_reviews">Recensioni</a></li>
+            <li><a href="#contact" data-i18n="contact_label">Contattaci</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4 data-i18n="footer_services">Servizi</h4>
+          <ul>
+            <li><a href="#amenities" data-i18n="amenity_pools_title">Piscine Termali</a></li>
+            <li><a href="#amenities">Spa & Wellness</a></li>
+            <li><a href="#dining" data-i18n="nav_dining">Ristorante</a></li>
+            <li><a href="#amenities" data-i18n="amenity_tours_title">Escursioni & Tour</a></li>
+            <li><a href="#amenities">Bike Rental</a></li>
+            <li><a href="#contact">Airport Shuttle</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 data-i18n="footer_contact">Contatti</h4>
+          <p><a href="tel:+39081994045">+39 081 994045</a></p>
+          <p><a href="mailto:info@gemmahotel.it">info@gemmahotel.it</a></p>
+          <p><a href="http://www.gemmahotel.it" target="_blank" rel="noopener">www.gemmahotel.it</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-i18n="footer_copyright">2026 Hotel Gemma. Tutti i diritti riservati.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
